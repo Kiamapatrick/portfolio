@@ -206,6 +206,9 @@ function initProjectCards() {
    7. CONTACT FORM (index.html) — POST to backend API
    ============================================================ */
 function initContactForm() {
+  // Guard: contact.html has its own handler (contact.js) with #ctSubmitBtn
+  if (document.getElementById('ctSubmitBtn')) return;
+
   const form = document.getElementById('contactForm');
   if (!form) return;
 
