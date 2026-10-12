@@ -1,11 +1,8 @@
 /* ============================================================
    PATRICK KIAMA — Portfolio CSS
    Design: Premium Minimal — Apple / Stripe / Linear / Vercel
-   Fonts: Sora (display) + DM Sans (body) + DM Mono (code)
+   Fonts: Montserrat (display) + Inter (body) + DM Mono (code)
    ============================================================ */
-
-/* ===== Google Fonts Import ===== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap');
 
 /* ===== CSS Variables ===== */
 :root {

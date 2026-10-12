@@ -6,10 +6,6 @@
 
 'use strict';
 
-/* ── API base URL — update this when you deploy the backend ── */
-var API_BASE = 'https://pk-portfolio-api.onrender.com'; // ← change after deploy
-// During local dev use: const API_BASE = 'http://localhost:5000';
-
 document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initCharCounter();

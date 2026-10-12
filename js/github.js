@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
    1. CONTRIBUTION GRID GENERATOR
    Fills the hero profile card with a realistic-looking
    GitHub-style contribution grid using randomised intensity.
+   NOTE: This grid is purely decorative/illustrative — it is
+   randomly generated on each page load and does not reflect
+   actual GitHub contribution data.
    ============================================================ */
 function initContribGrid() {
   const grid = document.getElementById('ghContribGrid');
