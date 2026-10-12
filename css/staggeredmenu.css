@@ -1,0 +1,505 @@
+/* ============================================================
+   PATRICK KIAMA — StaggeredMenu.css
+   Vanilla JS/CSS port of the ReactBits StaggeredMenu component.
+   Integrated with the existing portfolio design system.
+   Namespaced under .sm-* to avoid any collisions with style.css
+   ============================================================ */
+
+/* ── Wrapper ─────────────────────────────────────────────── */
+.staggered-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
+    pointer-events: none;
+    --sm-accent: #2563eb;
+    /* matches portfolio --accent  */
+    --sm-panel-width: clamp(280px, 42vw, 480px);
+}
+
+/* ── Header bar (replaces .navbar) ──────────────────────── */
+.sm-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.35rem 2rem;
+    pointer-events: none;
+    z-index: 20;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease,
+        border-color 0.4s ease, box-shadow 0.4s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.sm-header.scrolled {
+    background: rgba(249, 249, 249, 0.90);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* When panel is open — keep header fully transparent so it
+   sits cleanly above the coloured pre-layers */
+.staggered-menu-wrapper[data-open] .sm-header {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    border-bottom-color: transparent !important;
+}
+
+.sm-header>* {
+    pointer-events: auto;
+}
+
+/* ── Logo ────────────────────────────────────────────────── */
+.sm-logo {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text, #111);
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.sm-logo .dot {
+    color: var(--sm-accent);
+}
+
+/* Open state: logo goes white against coloured panel layers */
+.staggered-menu-wrapper[data-open] .sm-logo {
+    color: #fff;
+}
+
+.staggered-menu-wrapper[data-open] .sm-logo .dot {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── Toggle button ───────────────────────────────────────── */
+.sm-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text, #111);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.3s ease;
+    overflow: visible;
+}
+
+.sm-toggle:focus-visible {
+    outline: 2px solid var(--sm-accent);
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+/* Text cycling strip */
+.sm-toggle-textWrap {
+    position: relative;
+    display: inline-block;
+    height: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 3.5em;
+    /* wide enough for both "Menu" and "Close" */
+}
+
+.sm-toggle-textInner {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    will-change: transform;
+}
+
+.sm-toggle-line {
+    display: block;
+    height: 1em;
+    line-height: 1;
+}
+
+/* Plus / × icon */
+.sm-icon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    flex: 0 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+.sm-icon-line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+/* ── Pre-layers (coloured swoosh layers) ─────────────────── */
+.sm-prelayers {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: var(--sm-panel-width);
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.sm-prelayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    will-change: transform;
+}
+
+/* ── Main panel ──────────────────────────────────────────── */
+.sm-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--sm-panel-width);
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 5.5rem 2.5rem 2.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    pointer-events: auto;
+    will-change: transform;
+    overscroll-behavior: contain;
+}
+
+.sm-panel::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sm-panel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.sm-panel-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ── Nav list ────────────────────────────────────────────── */
+.sm-panel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    counter-reset: smItem;
+}
+
+.sm-panel-itemWrap {
+    position: relative;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.sm-panel-item {
+    display: inline-block;
+    position: relative;
+    color: #111;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 1.6em;
+    transition: color 0.25s ease;
+    cursor: pointer;
+}
+
+.sm-panel-item:hover {
+    color: var(--sm-accent);
+}
+
+.sm-panel-itemLabel {
+    display: inline-block;
+    will-change: transform;
+    transform-origin: 50% 100%;
+}
+
+/* Item numbering */
+.sm-panel-list[data-numbering] .sm-panel-item {
+    counter-increment: smItem;
+}
+
+.sm-panel-list[data-numbering] .sm-panel-item::after {
+    content: counter(smItem, decimal-leading-zero);
+    position: absolute;
+    top: 0.1em;
+    right: 0.2em;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--sm-accent);
+    pointer-events: none;
+    user-select: none;
+    opacity: var(--sm-num-opacity, 0);
+    transition: opacity 0.3s ease;
+}
+
+/* ── Socials ─────────────────────────────────────────────── */
+.sm-socials {
+    margin-top: auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.sm-socials-title {
+    margin: 0;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--sm-accent);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.sm-socials-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.sm-socials-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.25s ease, opacity 0.3s ease;
+}
+
+.sm-socials-link:hover {
+    color: var(--sm-accent);
+}
+
+.sm-socials-list:hover .sm-socials-link:not(:hover) {
+    opacity: 0.35;
+}
+
+.sm-socials-link:focus-visible {
+    outline: 2px solid var(--sm-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* ── Overlay backdrop (blocks page interaction when open) ── */
+.sm-backdrop {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.staggered-menu-wrapper[data-open] .sm-backdrop {
+    pointer-events: auto;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .staggered-menu-wrapper {
+        --sm-panel-width: 100vw;
+    }
+
+    .sm-panel {
+        padding-top: 5rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+
+    .sm-header {
+        padding: 1.1rem 1.25rem;
+    }
+
+    .sm-panel-item {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .sm-panel-item {
+        font-size: clamp(1.75rem, 11vw, 2.5rem);
+    }
+}
+
+/* ── Close button inside the panel ──────────────────────── */
+.sm-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    cursor: pointer;
+    color: #444;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 0.45rem 0.85rem 0.45rem 0.7rem;
+    transition: background 0.2s ease, border-color 0.2s ease,
+        color 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 20;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sm-close-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.18);
+    color: #111;
+    transform: scale(1.04);
+}
+
+.sm-close-btn:active {
+    transform: scale(0.97);
+}
+
+.sm-close-btn:focus-visible {
+    outline: 2px solid var(--sm-accent);
+    outline-offset: 3px;
+}
+
+/* The × icon — two lines crossing at 45deg */
+.sm-close-icon {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.sm-close-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    border-radius: 2px;
+    transform-origin: 50% 50%;
+}
+
+.sm-close-line:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.sm-close-line:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.sm-close-label {
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .sm-close-btn {
+        top: 1.2rem;
+        right: 1.25rem;
+    }
+}
+
+/* ============================================================
+   DARK MODE OVERRIDES
+   ============================================================ */
+
+/* Scrolled header bar */
+[data-theme="dark"] .sm-header.scrolled {
+    background: rgba(15, 17, 23, 0.92);
+    border-bottom-color: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Main panel background */
+[data-theme="dark"] .sm-panel {
+    background: #161821;
+}
+
+[data-theme="dark"] .sm-panel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Nav items */
+[data-theme="dark"] .sm-panel-item {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .sm-panel-item:hover {
+    color: #60a5fa;
+}
+
+/* Socials section */
+[data-theme="dark"] .sm-socials-link {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sm-socials-link:hover {
+    color: #60a5fa;
+}
+
+/* Close button */
+[data-theme="dark"] .sm-close-btn {
+    color: #94a3b8;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .sm-close-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Toggle button (Menu/Close text in header) */
+[data-theme="dark"] .sm-toggle {
+    color: var(--text, #ffffff);
+}

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain — Patrick Kiama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blockchain.css" />
+  <link rel="stylesheet" href="css/StaggeredMenu.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Credentials</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="github.html">GitHub</a></li>
+
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="bc-hero" id="home">
+    <div class="bc-hero-bg"></div>
+    <div class="bc-hero-orb orb-bc1"></div>
+    <div class="bc-hero-orb orb-bc2"></div>
+    <div class="bc-hero-orb orb-bc3"></div>
+
+    <div class="container bc-hero-inner">
+      <div class="bc-hero-content">
+        <p class="hero-eyebrow"><span class="mono">&lt;</span> Web3 &amp; Smart Contracts <span
+            class="mono">/&gt;</span></p>
+        <h1 class="bc-hero-title">Blockchain<br /><em>Development</em></h1>
+        <p class="bc-hero-sub">Building decentralized systems and smart contract solutions that improve transparency,
+          security and trust in digital platforms.</p>
+        <p class="bc-hero-desc">
+          Blockchain-powered applications combining modern web technologies with decentralized infrastructure to tackle
+          real-world challenges.
+        </p>
+        <div class="bc-hero-ctas">
+          <a href="#approach" class="btn btn-primary">Explore Work</a>
+          <a href="projects.html" class="btn btn-ghost">View Projects</a>
+        </div>
+      </div>
+
+      <!-- Right: animated chain visual -->
+      <div class="bc-hero-visual" aria-hidden="true">
+        <div class="bc-chain-visual">
+          <div class="bc-node bc-node-center">
+            <div class="bc-node-ring bc-ring-1"></div>
+            <div class="bc-node-ring bc-ring-2"></div>
+            <span class="mono">0x</span>
+          </div>
+          <div class="bc-node bc-node-top"><span class="mono">SC</span></div>
+          <div class="bc-node bc-node-right"><span class="mono">W3</span></div>
+          <div class="bc-node bc-node-bottom"><span class="mono">ETH</span></div>
+          <div class="bc-node bc-node-left"><span class="mono">DAO</span></div>
+          <svg class="bc-chain-lines" viewBox="0 0 300 300" fill="none">
+            <line x1="150" y1="150" x2="150" y2="44" stroke="rgba(37,99,235,0.2)" stroke-width="1"
+              stroke-dasharray="5 7" />
+            <line x1="150" y1="150" x2="256" y2="150" stroke="rgba(37,99,235,0.2)" stroke-width="1"
+              stroke-dasharray="5 7" />
+            <line x1="150" y1="150" x2="150" y2="256" stroke="rgba(37,99,235,0.2)" stroke-width="1"
+              stroke-dasharray="5 7" />
+            <line x1="150" y1="150" x2="44" y2="150" stroke="rgba(37,99,235,0.2)" stroke-width="1"
+              stroke-dasharray="5 7" />
+          </svg>
+
+          <!-- floating stats -->
+          <div class="bc-hero-stat bc-stat-tl">
+            <span class="bc-stat-num">2+</span>
+            <span class="bc-stat-lbl">Smart Contracts</span>
+          </div>
+          <div class="bc-hero-stat bc-stat-br">
+            <span class="bc-stat-num">Polygon</span>
+            <span class="bc-stat-lbl">Network</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== APPROACH ===== -->
+  <section class="section bc-approach-section" id="approach">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">01 /</span> My Approach</div>
+      <div class="bc-approach-grid">
+
+        <div class="bc-approach-text">
+          <h2 class="bc-approach-heading">Building Systems<br /><span class="accent">That Can't Be Tampered With</span>
+          </h2>
+          <p>
+            Blockchain technology makes systems transparent, secure and tamper-resistant. Combining decentralized
+            infrastructure with modern web applications builds solutions that enhance trust and efficiency in real-world
+            platforms.
+          </p>
+          <p>
+            Smart contracts are developed with security and reliability as top priorities, not just functionality.
+            On-chain code must be correct and resilient before deployment.
+          </p>
+        </div>
+
+        <div class="bc-approach-pillars">
+          <div class="bc-pillar-card">
+            <div class="bc-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Security First</h3>
+            <p>Contracts written defensively, audited against known attack vectors and tested on testnets before
+              deployment.</p>
+          </div>
+
+          <div class="bc-pillar-card">
+            <div class="bc-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <h3>Real-World Solutions</h3>
+            <p>Blockchain solves specific trust challenges — escrow, ownership, verification — rather than being a
+              universal solution.</p>
+          </div>
+
+          <div class="bc-pillar-card">
+            <div class="bc-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Web + Chain Integration</h3>
+            <p>Smart contracts connected to familiar frontends using Web3.js, MetaMask and modern JavaScript
+              frameworks.</p>
+          </div>
+
+          <div class="bc-pillar-card">
+            <div class="bc-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>Future-Ready Systems</h3>
+            <p>Platforms designed to evolve with the ecosystem — supporting layer 2 networks, low-cost transactions and
+              emerging standards.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SMART CONTRACTS ===== -->
+  <section class="section bc-contracts-section" id="contracts">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">02 /</span> Smart Contract Development</div>
+
+      <div class="bc-contracts-grid">
+
+        <div class="bc-contracts-intro">
+          <h2 class="section-title">Writing Code<br /><span class="accent">The Chain Trusts</span></h2>
+          <p>
+            Designing and deploying smart contracts using Solidity on Ethereum-compatible networks. Development
+            leverages Remix IDE for building, testing and deploying decentralized applications that interact securely
+            with blockchain infrastructure.
+          </p>
+          <div class="bc-tech-row">
+            <span class="bc-tech-pill">Solidity</span>
+            <span class="bc-tech-pill">Remix IDE</span>
+            <span class="bc-tech-pill">EVM</span>
+            <span class="bc-tech-pill">Testnets</span>
+            <span class="bc-tech-pill">Web3.js</span>
+            <span class="bc-tech-pill">MetaMask</span>
+          </div>
+        </div>
+
+        <div class="bc-contracts-cards">
+
+          <div class="bc-contract-card">
+            <div class="bc-contract-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <div>
+              <h3>Contract Writing</h3>
+              <p>Solidity contracts with clear logic, access control and event emission for on-chain transparency.</p>
+            </div>
+          </div>
+
+          <div class="bc-contract-card">
+            <div class="bc-contract-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+              </svg>
+            </div>
+            <div>
+              <h3>Remix IDE Workflow</h3>
+              <p>Complete development cycle in Remix — compile, test with JavaScript VMs and deploy to live networks.
+              </p>
+            </div>
+          </div>
+
+          <div class="bc-contract-card">
+            <div class="bc-contract-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+              </svg>
+            </div>
+            <div>
+              <h3>Polygon &amp; L2 Networks</h3>
+              <p>Deploying on Polygon for low-cost, high-speed transactions while maintaining EVM compatibility.</p>
+            </div>
+          </div>
+
+          <div class="bc-contract-card">
+            <div class="bc-contract-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="1" y="4" width="22" height="16" rx="2" />
+                <path d="M1 10h22" />
+              </svg>
+            </div>
+            <div>
+              <h3>MetaMask &amp; Frontend</h3>
+              <p>Smart contracts connected to frontends via Web3.js and MetaMask for seamless dApp interactions.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROJECT: ALINA ===== -->
+  <section class="section bc-featured-section" id="alina">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">03 /</span> Featured Blockchain Project</div>
+
+      <div class="bc-featured-card">
+        <div class="bc-featured-visual">
+          <div class="bc-featured-img">
+            <div class="bc-featured-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+              Live Project
+            </div>
+            <div class="bc-featured-graphic">
+              <div class="bc-graphic-node gn-a">🏠</div>
+              <div class="bc-graphic-node gn-b">💎</div>
+              <div class="bc-graphic-node gn-c">💚</div>
+              <div class="bc-graphic-node gn-d">🦊</div>
+              <svg class="bc-graphic-lines" viewBox="0 0 240 200" fill="none">
+                <line x1="120" y1="100" x2="120" y2="30" stroke="rgba(255,255,255,0.2)" stroke-width="1"
+                  stroke-dasharray="4 5" />
+                <line x1="120" y1="100" x2="210" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1"
+                  stroke-dasharray="4 5" />
+                <line x1="120" y1="100" x2="120" y2="170" stroke="rgba(255,255,255,0.2)" stroke-width="1"
+                  stroke-dasharray="4 5" />
+                <line x1="120" y1="100" x2="30" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1"
+                  stroke-dasharray="4 5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="bc-featured-body">
+          <h2>Alina<span class="accent">906Vibes</span></h2>
+          <p class="bc-featured-lead">A modern rental platform that integrates blockchain technology for booking
+            verification and transaction transparency.</p>
+          <p>The platform combines traditional web development with smart contract logic to create a secure and
+            trustworthy booking system. The system demonstrates how blockchain can enhance trust in digital transactions
+            by recording important booking information through smart contract verification.</p>
+
+          <div class="bc-featured-tech">
+            <span class="bc-tech-pill bc-pill-dark">Solidity</span>
+            <span class="bc-tech-pill bc-pill-dark">Smart Contracts</span>
+            <span class="bc-tech-pill bc-pill-dark">Polygon</span>
+            <span class="bc-tech-pill bc-pill-dark">Web3.js</span>
+            <span class="bc-tech-pill bc-pill-dark">MetaMask</span>
+            <span class="bc-tech-pill bc-pill-dark">Node.js</span>
+            <span class="bc-tech-pill bc-pill-dark">MongoDB</span>
+          </div>
+
+          <div class="bc-featured-list">
+            <div class="bc-list-item">
+              <span class="bc-list-dot"></span>
+              Smart contract-based booking verification that records rental agreements on-chain
+            </div>
+            <div class="bc-list-item">
+              <span class="bc-list-dot"></span>
+              M-Pesa payment integration linked to smart contract release conditions
+            </div>
+            <div class="bc-list-item">
+              <span class="bc-list-dot"></span>
+              Immutable booking records that neither party can alter after confirmation
+            </div>
+            <div class="bc-list-item">
+              <span class="bc-list-dot"></span>
+              MetaMask wallet connection for tenant identity and transaction signing
+            </div>
+          </div>
+
+          <a href="https://alina906vibes.netlify.app" class="btn btn-primary">View Full Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI + IDENTITY ===== -->
+  <section class="section bc-identity-section" id="identity">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">04 /</span> AI &amp; Identity Integration</div>
+      <div class="bc-identity-grid">
+
+        <div class="bc-identity-text">
+          <h2 class="section-title">Decentralized + <span class="accent">Verified</span></h2>
+
+          <p class="bc-identity-intro">
+            Blockchain platforms require secure identity verification and fraud prevention. Combining decentralized
+            systems with AI-powered verification ensures trust, privacy and compliance.
+          </p>
+
+          <div class="bc-identity-points">
+            <span>• AI-driven identity checks for real-user verification</span><br />
+            <span>• Privacy-focused KYC without centralizing sensitive data</span><br />
+            <span>• Enterprise-grade compliance and fraud prevention</span><br />
+            <span>• Seamless integration with Web3 and fintech platforms</span>
+          </div>
+        </div>
+
+        <div class="bc-identity-cards">
+
+          <div class="bc-identity-card">
+            <div class="bc-id-header">
+              <div class="bc-id-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div>
+                <h3>Didit Identity Verification</h3>
+                <span class="bc-id-badge">AI-Powered</span>
+              </div>
+            </div>
+            <p>AI-based identity verification confirms user identity while keeping sensitive data decentralized and
+              privacy-focused.</p>
+            <div class="bc-id-tags">
+              <span>Identity Verification</span>
+              <span>AI</span>
+              <span>Privacy</span>
+            </div>
+          </div>
+
+          <div class="bc-identity-card">
+            <div class="bc-id-header">
+              <div class="bc-id-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div>
+                <h3>Veriff KYC Verification</h3>
+                <span class="bc-id-badge">Enterprise KYC</span>
+              </div>
+            </div>
+            <p>Enterprise-grade KYC for fintech and Web3 platforms, ensuring compliance, reducing fraud and maintaining
+              decentralized trust.</p>
+            <div class="bc-id-tags">
+              <span>KYC</span>
+              <span>Compliance</span>
+              <span>Fraud Prevention</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FUTURE PROJECT ===== -->
+  <section class="section bc-future-section" id="future">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">05 /</span> Future Blockchain Project</div>
+
+      <div class="bc-future-card">
+        <div class="bc-future-header">
+          <div class="bc-future-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            Coming Soon
+          </div>
+          <h2>Blockchain Vehicle<br /><span class="accent">History Platform</span></h2>
+          <p class="bc-future-lead">A blockchain-based vehicle history system — storing servicing records, ownership
+            history, accident reports and maintenance logs on an immutable ledger.</p>
+        </div>
+
+        <div class="bc-future-body">
+          <p>By storing vehicle records on blockchain infrastructure, the system ensures that vehicle information cannot
+            be altered or manipulated — improving transparency and trust in the automotive industry between buyers,
+            sellers and service providers.</p>
+
+          <div class="bc-future-features">
+            <div class="bc-future-feature">
+              <div class="bc-ff-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Immutable Records</h4>
+                <p>Vehicle history stored permanently on-chain — servicing, accidents and ownership changes that no one
+                  can alter.</p>
+              </div>
+            </div>
+
+            <div class="bc-future-feature">
+              <div class="bc-ff-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div>
+                <h4>Ownership Tracking</h4>
+                <p>Transparent, verifiable chain of ownership from manufacture to present day — instantly provable by
+                  any buyer.</p>
+              </div>
+            </div>
+
+            <div class="bc-future-feature">
+              <div class="bc-ff-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                </svg>
+              </div>
+              <div>
+                <h4>Verified Maintenance</h4>
+                <p>Service providers add maintenance records directly to the blockchain — eliminating fake or forged
+                  service histories.</p>
+              </div>
+            </div>
+
+            <div class="bc-future-feature">
+              <div class="bc-ff-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div>
+                <h4>Accident Reporting</h4>
+                <p>Verified accident and damage records appended by insurance and repair providers — no more hidden
+                  crash histories.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bc-future-stack">
+            <span class="bc-stack-label mono">Planned stack:</span>
+            <div class="bc-future-pills">
+              <span class="bc-tech-pill">Solidity</span>
+              <span class="bc-tech-pill">Polygon</span>
+              <span class="bc-tech-pill">IPFS</span>
+              <span class="bc-tech-pill">Next.js</span>
+              <span class="bc-tech-pill">Web3.js</span>
+              <span class="bc-tech-pill">MetaMask</span>
+              <span class="bc-tech-pill">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section class="section bc-stack-section" id="stack">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">06 /</span> Technologies</div>
+      <h2 class="section-title">Blockchain <span class="accent">Toolkit</span></h2>
+
+      <div class="bc-tech-grid">
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l9 7v6l-9 7-9-7V9l9-7z" />
+            </svg>
+          </div>
+          <h3>Solidity</h3>
+          <p>Object-oriented language for writing EVM-compatible smart contracts — the core of all on-chain logic.</p>
+          <div class="bc-tech-tags"><span>EVM</span><span>Contracts</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+            </svg>
+          </div>
+          <h3>Polygon</h3>
+          <p>Layer 2 scaling network for Ethereum — fast, cheap transactions while staying fully EVM-compatible.</p>
+          <div class="bc-tech-tags"><span>L2</span><span>Low Fees</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3>EVM</h3>
+          <p>Ethereum Virtual Machine — the execution environment for smart contracts across dozens of compatible
+            blockchains.</p>
+          <div class="bc-tech-tags"><span>Ethereum</span><span>Compatible</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v8M8 12h8" />
+            </svg>
+          </div>
+          <h3>Web3.js</h3>
+          <p>JavaScript library for connecting frontend applications to Ethereum nodes and smart contract interfaces.
+          </p>
+          <div class="bc-tech-tags"><span>ABI</span><span>Providers</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2" />
+              <path d="M1 10h22" />
+            </svg>
+          </div>
+          <h3>MetaMask</h3>
+          <p>The standard browser wallet for Web3 — used across all projects for user authentication and transaction
+            signing.</p>
+          <div class="bc-tech-tags"><span>Wallet</span><span>dApp</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>Remix IDE</h3>
+          <p>Browser-based Solidity IDE for writing, compiling, testing and deploying smart contracts with zero setup.
+          </p>
+          <div class="bc-tech-tags"><span>IDE</span><span>Debug</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+          </div>
+          <h3>Smart Contracts</h3>
+          <p>Self-executing code deployed to the blockchain — handling escrow, bookings and automated agreement logic.
+          </p>
+          <div class="bc-tech-tags"><span>Trustless</span><span>Automated</span></div>
+        </div>
+
+        <div class="bc-tech-card">
+          <div class="bc-tech-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3>Blockchain Testnets</h3>
+          <p>Deploying and validating contracts on Sepolia, Mumbai and other testnets before any production deployment.
+          </p>
+          <div class="bc-tech-tags"><span>Testing</span><span>Validation</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section bc-cta-section">
+    <div class="container fade-in">
+      <div class="bc-cta-inner">
+        <div class="bc-cta-orb"></div>
+        <div class="bc-cta-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+        </div>
+        <p class="bc-cta-eyebrow mono">Building the future</p>
+        <h2 class="bc-cta-heading">Building the Future<br /><span class="accent">with Blockchain</span></h2>
+        <p class="bc-cta-sub">
+          Actively exploring ways to combine blockchain, modern web platforms and secure systems to tackle real-world
+          challenges.
+        </p>
+        <div class="bc-cta-btns">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="index.html#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">PK<span class="dot">.</span></span>
+        <p>© Patrick Kiama — Full Stack Developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/blockchain.js"></script>
+  <script src="js/StaggeredMenu.js"></script>
+</body>
+
+</html>

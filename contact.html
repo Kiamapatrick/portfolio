@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Patrick Kiama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/StaggeredMenu.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certifications.html">Credentials</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="ct-hero" id="home">
+    <div class="ct-hero-bg"></div>
+    <div class="ct-hero-orb orb-ct1"></div>
+    <div class="ct-hero-orb orb-ct2"></div>
+
+    <div class="container ct-hero-inner">
+      <div class="ct-hero-content">
+        <p class="hero-eyebrow"><span class="mono">&lt;</span> Let's Talk <span class="mono">/&gt;</span></p>
+        <h1 class="ct-hero-title">Get In<br /><em>Touch</em></h1>
+        <p class="ct-hero-sub">Let's build something great together.</p>
+        <p class="ct-hero-desc">If you have a project idea, collaboration opportunity, or business inquiry, feel free to
+          reach out. Open to discussing new projects and innovative solutions.</p>
+        <div class="ct-hero-ctas">
+          <a href="mailto:patokiama2000@gmail.com" class="btn btn-primary">
+            Email Patrick – patokiama2000@gmail.com
+          </a>
+          <a href="projects.html" class="btn btn-ghost">View Projects</a>
+        </div>
+      </div>
+
+      <!-- Right: availability card -->
+      <div class="ct-hero-visual" aria-hidden="true">
+        <div class="ct-status-card">
+          <div class="ct-sc-header">
+            <span class="ct-sc-label mono">Current Status</span>
+            <div class="ct-avail-pill">
+              <span class="ct-avail-dot"></span>
+              Available
+            </div>
+          </div>
+
+          <div class="ct-sc-body">
+            <h3>Open for Work</h3>
+            <p>Available for freelance projects, collaborations and full-time opportunities in web development and
+              blockchain.</p>
+          </div>
+
+          <div class="ct-sc-types">
+            <div class="ct-sc-type">
+              <div class="ct-sc-type-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <span>Web Development</span>
+            </div>
+
+            <div class="ct-sc-type">
+              <div class="ct-sc-type-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <span>Blockchain &amp; Web3</span>
+            </div>
+
+            <div class="ct-sc-type">
+              <div class="ct-sc-type-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+              <span>Full Stack Platforms</span>
+            </div>
+
+            <div class="ct-sc-type">
+              <div class="ct-sc-type-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <span>Secure Systems</span>
+            </div>
+
+            <div class="ct-sc-type">
+              <div class="ct-sc-type-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+              </div>
+              <span>Data Science</span>
+            </div>
+          </div>
+
+          <div class="img-corner tl"></div>
+          <div class="img-corner tr"></div>
+          <div class="img-corner bl"></div>
+          <div class="img-corner br"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT INFO + FORM ===== -->
+  <section class="section ct-main-section" id="contact">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">01 /</span> Reach Out</div>
+
+      <div class="ct-main-grid">
+
+        <!-- Left: contact info -->
+        <div class="ct-info-col">
+          <h2 class="ct-info-heading">Contact<br /><span class="accent">Information</span></h2>
+          <p class="ct-info-intro">Available for freelance projects, collaborations and professional
+            opportunities. The best way to reach me is by email.</p>
+
+          <div class="ct-info-cards">
+
+            <a href="mailto:patokiama2000@gmail.com" class="ct-info-card ct-info-link">
+              <div class="ct-info-icon ct-icon-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div class="ct-info-body">
+                <span class="ct-info-type">Email</span>
+                <span class="ct-info-value">patokiama2000@gmail.com</span>
+              </div>
+              <div class="ct-info-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </a>
+
+            <div class="ct-info-card">
+              <div class="ct-info-icon ct-icon-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="ct-info-body">
+                <span class="ct-info-type">Location</span>
+                <span class="ct-info-value">Nairobi, Kenya</span>
+              </div>
+            </div>
+
+            <div class="ct-info-card">
+              <div class="ct-info-icon ct-icon-time">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div class="ct-info-body">
+                <span class="ct-info-type">Response Time</span>
+                <span class="ct-info-value">Within 24 hours</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social links -->
+          <div class="ct-social-group">
+            <p class="ct-social-label mono">Connect online</p>
+            <div class="ct-social-links">
+
+              <a href="github.html" class="ct-social-card">
+                <div class="ct-social-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div class="ct-social-body">
+                  <span class="ct-social-name">GitHub</span>
+                  <span class="ct-social-handle mono">@patrickKiama</span>
+                </div>
+                <svg class="ct-social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/patrick-kiama-ba91103b9/" target="_blank" class="ct-social-card">
+                <div class="ct-social-icon ct-icon-linkedin">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </div>
+                <div class="ct-social-body">
+                  <span class="ct-social-name">LinkedIn</span>
+                  <span class="ct-social-handle mono">Patrick Kiama</span>
+                </div>
+                <svg class="ct-social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+
+              <a href="mailto:patokiama2000@gmail.com" class="ct-social-card">
+                <div class="ct-social-icon ct-icon-email-sm">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div class="ct-social-body">
+                  <span class="ct-social-name">Email</span>
+                  <span class="ct-social-handle mono">patokiama2000@gmail.com</span>
+                </div>
+                <svg class="ct-social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="ct-form-col">
+          <div class="ct-form-card">
+            <div class="ct-form-header">
+              <h3>Send a Message</h3>
+              <p>Provide your details and expect a response within 24 hours.</p>
+            </div>
+
+            <form class="ct-form" id="contactForm" novalidate>
+
+              <div class="ct-form-row">
+                <div class="ct-field">
+                  <label for="ctName">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Name
+                  </label>
+                  <input type="text" id="ctName" name="name" placeholder="Your full name" autocomplete="name"
+                    required />
+                  <span class="ct-field-error" id="ctNameErr">Please enter your name.</span>
+                </div>
+                <div class="ct-field">
+                  <label for="ctEmail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    Email
+                  </label>
+                  <input type="email" id="ctEmail" name="email" placeholder="your@email.com" autocomplete="email"
+                    required />
+                  <span class="ct-field-error" id="ctEmailErr">Please enter a valid email.</span>
+                </div>
+              </div>
+
+              <div class="ct-field">
+                <label for="ctSubject">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                  Subject
+                </label>
+                <div class="ct-select-wrap">
+                  <select id="ctSubject" name="subject" required>
+                    <option value="" disabled selected>Select a subject…</option>
+                    <option value="Web Development Project">Web Development Project</option>
+                    <option value="Blockchain / Web3 Project">Blockchain / Web3 Project</option>
+                    <option value="Full Stack Platform">Full Stack Platform</option>
+                    <option value="Business Consultation">Business Consultation</option>
+                    <option value="Collaboration Opportunity">Collaboration Opportunity</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <svg class="ct-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+                <span class="ct-field-error" id="ctSubjectErr">Please select a subject.</span>
+              </div>
+
+              <div class="ct-field">
+                <label for="ctMessage">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  Message
+                </label>
+                <textarea id="ctMessage" name="message" rows="5" placeholder="Tell me about your project or idea…"
+                  required></textarea>
+                <div class="ct-char-count"><span id="ctCharCount">0</span> / 1000</div>
+                <span class="ct-field-error" id="ctMessageErr">Please enter your message.</span>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary ct-submit-btn" id="ctSubmitBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="ct-btn-icon">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+                <span id="ctBtnLabel">Send Message</span>
+              </button>
+
+              <!-- Success toast -->
+              <div class="ct-success-toast" id="ctSuccessToast" role="status" aria-live="polite">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                <div>
+                  <strong>Message sent!</strong>
+                  <p>Thanks for getting in touch — a reply will arrive within 24 hours.</p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVAILABILITY ===== -->
+  <section class="section ct-avail-section" id="availability">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">02 /</span> Availability</div>
+
+      <div class="ct-avail-grid">
+
+        <div class="ct-avail-text">
+          <h2 class="ct-avail-heading">Currently <span class="accent">Available</span></h2>
+          <p>Open to web development projects, blockchain-based platforms and digital solutions for businesses. Ideas
+            and projects using modern web technologies can be discussed to bring them to life efficiently.</p>
+          <div class="ct-avail-indicator">
+            <span class="ct-avail-dot ct-dot-lg"></span>
+            <span>Open to new projects &amp; collaborations</span>
+          </div>
+        </div>
+
+        <div class="ct-avail-types">
+          <div class="ct-avail-type-card">
+            <div class="ct-at-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div>
+              <h3>Web Development</h3>
+              <p>Frontend, backend and full-stack web application development using modern technologies and frameworks.
+              </p>
+            </div>
+          </div>
+
+          <div class="ct-avail-type-card">
+            <div class="ct-at-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div>
+              <h3>Blockchain Platforms</h3>
+              <p>Smart contract development, Web3 integration, and decentralized application architecture on
+                EVM-compatible networks.</p>
+            </div>
+          </div>
+
+          <div class="ct-avail-type-card">
+            <div class="ct-at-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="1" y="4" width="22" height="16" rx="2" />
+                <path d="M1 10h22" />
+              </svg>
+            </div>
+            <div>
+              <h3>Fintech &amp; Payments</h3>
+              <p>M-Pesa integrations, payment gateway implementations, and secure transactional system design.</p>
+            </div>
+          </div>
+
+          <div class="ct-avail-type-card">
+            <div class="ct-at-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div>
+              <h3>Business Websites</h3>
+              <p>Professional corporate websites, landing pages, and digital brand presence for businesses across
+                industries.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section ct-cta-section">
+    <div class="container fade-in">
+      <div class="ct-cta-inner">
+        <div class="ct-cta-orb"></div>
+
+        <div class="ct-cta-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+          </svg>
+        </div>
+
+        <p class="ct-cta-eyebrow mono">Let's collaborate</p>
+        <h2 class="ct-cta-heading">Let's Build Something<br /><span class="accent">Together</span></h2>
+        <p class="ct-cta-sub">Technology evolves rapidly. Collaborate to create innovative digital products. Projects of
+          any scope using modern web and blockchain technologies can be discussed and brought to life efficiently.</p>
+
+        <div class="ct-cta-btns">
+          <a href="#contact" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="ct-btn-icon">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+            Send a Message
+          </a>
+          <a href="projects.html" class="btn btn-ghost">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">PK<span class="dot">.</span></span>
+        <p>© Patrick Kiama — Full Stack Developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/StaggeredMenu.js"></script>
+</body>
+
+</html>

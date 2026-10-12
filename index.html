@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick Kiama — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/StaggeredMenu.css" />
+  <link rel="stylesheet" href="css/LogoLoop.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blockchain">Blockchain</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="mono">&lt;</span> Available for work <span class="mono">/&gt;</span></p>
+      <h1 class="hero-name">Patrick<br /><em>Kiama</em></h1>
+      <p class="hero-role">Full Stack Developer <span class="sep">|</span> Blockchain Builder <span class="sep">|</span>
+        Systems Architect</p>
+      <p class="hero-desc">
+        Builds modern web platforms, secure systems<br class="br-desk" />
+        and scalable digital solutions powered by full-stack, blockchain and data technologies.
+      </p>
+      <div class="hero-typing-wrap">
+        <span class="mono typing-prefix">&gt; </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#about" class="btn btn-ghost">Explore Work</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">02 /</span> About</div>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <!-- inside .about-img-wrap, replacing .about-img-placeholder -->
+          <div class="workstation-wrap" role="img"
+            aria-label="Skeuomorphic monitor displaying Patrick's tech stack icons">
+            <div class="ws-bezel">
+              <div class="ws-dot" aria-hidden="true"></div>
+              <div class="ws-screen">
+                <div class="ws-menubar" aria-hidden="true">
+                  <span class="ws-mb-r"></span>
+                  <span class="ws-mb-y"></span>
+                  <span class="ws-mb-g"></span>
+                  <span class="ws-mb-text">patrick@dev ~/portfolio</span>
+                </div>
+                <div class="ws-icon-grid" aria-hidden="true">
+                  <!-- React -->
+                  <div class="ws-chip" title="React">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <circle cx="12" cy="12" r="2.2" fill="#61dafb" />
+                      <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1" fill="none" />
+                      <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1" fill="none"
+                        transform="rotate(60 12 12)" />
+                      <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1" fill="none"
+                        transform="rotate(-60 12 12)" />
+                    </svg>
+                    <span>React</span>
+                  </div>
+                  <!-- Node.js -->
+                  <div class="ws-chip" title="Node.js">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <path d="M12 2L3 7v10l9 5 9-5V7L12 2z" stroke="#3c873a" stroke-width="1.2" fill="none" />
+                      <path d="M12 7v10M7.5 9.5l4.5 2.5 4.5-2.5" stroke="#3c873a" stroke-width="1" fill="none" />
+                    </svg>
+                    <span>Node.js</span>
+                  </div>
+                  <!-- MongoDB -->
+                  <div class="ws-chip" title="MongoDB">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <path d="M12 3c-2 0-4 4-4 9s2 9 4 9 4-4 4-9-2-9-4-9z" stroke="#47a248" stroke-width="1.2"
+                        fill="none" />
+                      <path d="M12 3v18" stroke="#47a248" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <span>MongoDB</span>
+                  </div>
+                  <!-- Solidity -->
+                  <div class="ws-chip" title="Solidity">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <polygon points="12,3 21,8 21,16 12,21 3,16 3,8" stroke="#8b8b8b" stroke-width="1.2"
+                        fill="rgba(139,139,139,0.12)" />
+                      <polygon points="12,6 18,9.5 18,16.5 12,20 6,16.5 6,9.5" stroke="#6b6b6b" stroke-width="0.8"
+                        fill="none" opacity="0.6" />
+                    </svg>
+                    <span>Solidity</span>
+                  </div>
+                  <!-- MetaMask -->
+                  <div class="ws-chip" title="MetaMask">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <path d="M20.5 3.5L13 9.5l1.4-3.3z" fill="#e2761b" />
+                      <path d="M3.5 3.5L11 9.5l-1.4-3.3z" fill="#e4761b" />
+                      <path d="M17.8 16.5l-2.1 3.3 4.5 1.2 1.3-4.4z" fill="#e4761b" />
+                      <path d="M2.5 16.6l1.3 4.4 4.5-1.2-2.1-3.3z" fill="#e4761b" />
+                      <path d="M8 11.5L6.7 13.5 11 13.7l-.15-4.6z" fill="#e4761b" />
+                      <path d="M16 11.5l-2.9-2.4-.15 4.6 4.35-.2z" fill="#e4761b" />
+                    </svg>
+                    <span>MetaMask</span>
+                  </div>
+                  <!-- Next.js -->
+                  <div class="ws-chip" title="Next.js">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <circle cx="12" cy="12" r="9" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" fill="none" />
+                      <path d="M9 8.5v7L17 8.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" />
+                    </svg>
+                    <span>Next.js</span>
+                  </div>
+                  <!-- Polygon -->
+                  <div class="ws-chip" title="Polygon">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <path d="M9 6L5 9v6l4 3 4-3V9L9 6z" stroke="#8247e5" stroke-width="1.2"
+                        fill="rgba(130,71,229,0.15)" />
+                      <path d="M15 9l-2 1.5v3L15 15l2-1.5v-3z" stroke="#8247e5" stroke-width="1"
+                        fill="rgba(130,71,229,0.1)" />
+                    </svg>
+                    <span>Polygon</span>
+                  </div>
+                  <!-- GitHub -->
+                  <div class="ws-chip" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.75)" width="22" height="22">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                  </div>
+                  <!-- Vercel -->
+                  <div class="ws-chip" title="Vercel">
+                    <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" width="22" height="22">
+                      <path d="M24 22.525H0L12 1.475z" />
+                    </svg>
+                    <span>Vercel</span>
+                  </div>
+                  <!-- M-Pesa -->
+                  <div class="ws-chip" title="M-Pesa">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <rect x="3" y="5" width="18" height="14" rx="3" stroke="#00b300" stroke-width="1.2"
+                        fill="rgba(0,179,0,0.12)" />
+                      <text x="12" y="14.5" text-anchor="middle" font-size="7" font-weight="700" fill="#00b300"
+                        font-family="monospace">M-P</text>
+                    </svg>
+                    <span>M-Pesa</span>
+                  </div>
+                  <!-- PostgreSQL -->
+                  <div class="ws-chip" title="PostgreSQL">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <ellipse cx="12" cy="7" rx="7" ry="4" stroke="#336791" stroke-width="1.2"
+                        fill="rgba(51,103,145,0.15)" />
+                      <path d="M5 7v10c0 2.2 3.1 4 7 4s7-1.8 7-4V7" stroke="#336791" stroke-width="1.2" fill="none" />
+                      <path d="M5 12c0 2.2 3.1 4 7 4s7-1.8 7-4" stroke="#336791" stroke-width="0.8" fill="none"
+                        opacity="0.6" />
+                    </svg>
+                    <span>PostgreSQL</span>
+                  </div>
+                  <!-- Web3 -->
+                  <div class="ws-chip" title="Web3.js">
+                    <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                      <circle cx="12" cy="12" r="9" stroke="#f16822" stroke-width="1.2" fill="rgba(241,104,34,0.1)" />
+                      <text x="12" y="15.5" text-anchor="middle" font-size="8" font-weight="700" fill="#f16822"
+                        font-family="monospace">W3</text>
+                    </svg>
+                    <span>Web3.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ws-neck"></div>
+            <div class="ws-base"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Coding</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects Built</span></div>
+            <div class="stat"><span class="stat-num">28+</span><span class="stat-label">Credentials</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>Building Digital<br /><span class="accent">Systems</span> That Solve Problems</h2>
+
+          <p>
+            Computer Science student at <strong>Jomo Kenyatta University of Agriculture and Technology</strong> (Year 3)
+            with
+            over three years of experience building modern web platforms, secure backend systems and blockchain
+            applications.
+          </p>
+
+          <p>
+            Experience includes 10+ real-world projects ranging from professional business websites to full-stack
+            applications with databases, payment systems, smart contracts and cloud deployments.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">JKUAT</span>
+            <span class="tag">IBM</span>
+            <span class="tag">CISCO</span>
+            <span class="tag">Linux Foundation</span>
+            <span class="tag">Microsoft</span>
+            <span class="tag">ZALEGO</span>
+          </div>
+          <a href="about.html" class="btn btn-primary">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">03 /</span> Skills</div>
+      <h2 class="section-title">Core <span class="accent">Competencies</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <span class="skill-num">01</span>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Interactive, responsive interfaces designed for smooth user experiences across devices.</p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:92%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span>
+            <span class="tag">HTML5</span><span class="tag">CSS3</span>
+            <span class="tag">Tailwind</span><span class="tag">TypeScript</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <span class="skill-num">02</span>
+          </div>
+          <h3>Backend Systems</h3>
+          <p>Scalable server-side systems and APIs built for performance, reliability and efficiency.</p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:85%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span><span class="tag">Express</span>
+            <span class="tag">Python</span><span class="tag">Django</span>
+            <span class="tag">REST API</span><span class="tag">GraphQL</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+              </svg>
+            </div>
+            <span class="skill-num">03</span>
+          </div>
+          <h3>Database Engineering</h3>
+          <p>High-performance data systems designed for fast, reliable access across structured and unstructured data.
+          </p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:80%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span><span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span><span class="tag">Redis</span>
+            <span class="tag">Node.js</span><span class="tag">PHP</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card featured-skill">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <span class="skill-featured-badge">
+              <span class="skill-badge-dot"></span>Featured
+            </span>
+          </div>
+          <h3>Blockchain Development</h3>
+          <p>Decentralized applications and smart contracts built for secure, real-world use cases.</p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:78%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Solidity</span><span class="tag">Smart Contracts</span>
+            <span class="tag">Web3.js</span><span class="tag">MetaMask</span>
+            <span class="tag">Polygon</span><span class="tag">Remix</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <span class="skill-num">05</span>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Network security and threat analysis using Linux-based environments and industry tools for monitoring and
+            system protection.</p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:70%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Packet Tracer</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">Security Onion</span>
+            <span class="tag">Sguil</span>
+            <span class="tag">Kibana</span>
+            <span class="tag">CyberChef</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3v18M3 12h18" />
+              </svg>
+            </div>
+            <span class="skill-num">06</span>
+          </div>
+          <h3>Data Science</h3>
+          <p>Data analysis and machine learning using Python and modern tools to extract insights and support
+            decision-making.</p>
+          <div class="skill-proficiency">
+            <div class="skill-proficiency-bar" style="width:68%"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">IBM Watson</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+
+      </div>
+      <div class="section-cta">
+        <a href="skills.html" class="btn btn-ghost">View All Skills →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section certs-section" id="certifications">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">04 /</span> Certifications</div>
+      <h2 class="section-title">Verified <span class="accent">Credentials</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-badge ibm">IBM</div>
+          <div class="cert-body">
+            <h3>Data Science</h3>
+            <p>IBM Professional Certificate covering data analysis, visualization and applied analytics using modern
+              tools.</p>
+            <span class="cert-issuer">IBM Learning</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge cisco">CISCO</div>
+          <div class="cert-body">
+            <h3>Cybersecurity &amp; Ethical Hacking</h3>
+            <p>Network security, threat detection, ethical hacking, and system protection using industry-standard tools.
+            </p>
+            <span class="cert-issuer">Cisco Networking Academy</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge ibm">IBM</div>
+          <div class="cert-body">
+            <h3>IBM SkillsBuild Cybersecurity</h3>
+            <p>Advanced cybersecurity training covering SOC operations, GRC, cloud security, vulnerability management,
+              and incident response.</p>
+            <span class="cert-issuer">IBM SkillsBuild</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge zalego">ZAL</div>
+          <div class="cert-body">
+            <h3>Programming</h3>
+            <p>Strong foundation in software development, problem solving and coding best practices including full stack
+              and Android.</p>
+            <span class="cert-issuer">Zalego Institute</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge"
+            style="background:linear-gradient(135deg,#001233,#0078d4);color:#fff;font-size:0.7rem;font-weight:800;">LF
+          </div>
+          <div class="cert-body">
+            <h3>Linux Foundation</h3>
+            <p>Four verified badges in Linux, Kubernetes, secure software development, and blockchain fundamentals.</p>
+            <span class="cert-issuer">The Linux Foundation</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge credly">JKUAT</div>
+          <div class="cert-body">
+            <h3>Computer Science — Year 3</h3>
+            <p>Currently in 3rd year of a degree covering algorithms, systems, software engineering and emerging
+              technologies.</p>
+            <span class="cert-issuer">JKUAT</span>
+          </div>
+        </div>
+
+        <a href="https://www.credly.com/users/patrick-kiama.eeff0dd7/badges#credly" target="_blank"
+          class="cert-card credly-link-card">
+          <div class="cert-badge credly">✦</div>
+          <div class="cert-body">
+            <h3>Credly Badges</h3>
+            <p>18 verified digital badges demonstrating continuous learning across cybersecurity, cloud, DevOps,
+              blockchain, and more.</p>
+            <span class="cert-issuer">Credly Platform</span>
+          </div>
+        </a>
+
+      </div>
+      <div class="section-cta">
+        <a href="certifications.html" class="btn btn-ghost">View All Credentials →</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">05 /</span> Projects</div>
+      <h2 class="section-title">Selected <span class="accent">Work</span></h2>
+
+      <div class="projects-group">
+        <h3 class="projects-subtitle">Production Platforms</h3>
+        <div class="projects-grid">
+
+          <!-- SafeEscrow -->
+          <div class="project-card">
+            <div class="project-img" data-label="SafeEscrow">
+              <div class="project-img-inner p1"></div>
+              <a href="https://safe-escrow.netlify.app/" class="project-hover-overlay"><span>View Project →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>SafeEscrow</h3>
+              <p>M-Pesa integrated escrow system with blockchain verification for secure peer-to-peer transactions.</p>
+              <div class="project-tags">
+                <span>Solidity</span><span>Node.js</span><span>M-Pesa API</span><span>Web3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alina -->
+          <div class="project-card">
+            <div class="project-img" data-label="Alina906Vibes">
+              <div class="project-img-inner p2"></div>
+              <a href="https://alina906vibes.netlify.app/" class="project-hover-overlay"><span>View Project →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>Alina906Vibes</h3>
+              <p>House rental platform with listings, booking system, payment processing and availability management.
+              </p>
+              <div class="project-tags">
+                <span>Node.js</span><span>MongoDB</span><span>JavaScript</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meraki -->
+          <div class="project-card">
+            <div class="project-img" data-label="Meraki Auto">
+              <div class="project-img-inner p3"></div>
+              <a href="https://meraki-auto.netlify.app/" class="project-hover-overlay"><span>View Project →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>Meraki Auto</h3>
+              <p>Car rental platform with vehicle listings, booking management and customer reservation tools.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience906 -->
+          <div class="project-card">
+            <div class="project-img" data-label="Experience906Vibes">
+              <div class="project-img-inner p5"></div>
+              <a href="https://experience906vibes.netlify.app/" class="project-hover-overlay"><span>View Project
+                  →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>Experience906Vibes</h3>
+              <p>Experiences discovery platform for Kenya allowing users to explore and book unique activities.</p>
+              <div class="project-tags">
+                <span>Node.js</span><span>MongoDB</span><span>JavaScript</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img" data-label="DukaLedger">
+              <div class="project-img-inner p-dukaledger"></div>
+              <a href="https://dukaledger.netlify.app" class="project-hover-overlay"><span>View Project
+                  →</span></a>
+              <!-- <div class="project-hover-overlay project-hover-overlay--inprogress">
+                <span class="dl-inprogress-badge">
+                  <span class="dl-inprogress-dot"></span>
+                  In Progress
+                </span>
+              </div> -->
+            </div>
+            <div class="project-info">
+              <div class="dl-title-row">
+                <h3>DukaLedger</h3>
+                <span class="dl-badge-inline">
+                  <span class="dl-badge-dot"></span>In Progress
+                </span>
+              </div>
+              <p>Full-stack sales &amp; inventory management system built for Kenyan clothing shops — with multi-user
+                access, profit tracking, and smart contract integration coming soon.</p>
+              <div class="project-tags">
+                <span>Node.js</span><span>MongoDB</span><span>Express</span>
+                <span>M-Pesa</span><span>Web3</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="projects-group">
+        <h3 class="projects-subtitle">Professional Client Websites</h3>
+        <div class="projects-grid">
+
+          <!-- Noventra Advisory -->
+          <div class="project-card">
+            <div class="project-img" data-label="Noventra Advisory">
+              <div class="project-img-inner p4"></div>
+              <a href="https://noventraadvisoryglobal.com/" class="project-hover-overlay"><span>View Project
+                  →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>Noventra Advisory</h3>
+              <p>Corporate advisory website presenting tax advisory services, transfer pricing expertise and consulting
+                solutions.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Noventra Blog -->
+          <div class="project-card">
+            <div class="project-img" data-label="Noventra Blog">
+              <div class="project-img-inner p6"></div>
+              <a href="https://noventra-blog.netlify.app/" class="project-hover-overlay"><span>View Project →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>Noventra Blog</h3>
+              <p>Blog platform publishing articles on taxation, compliance and regulatory updates.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- APSIS -->
+          <div class="project-card">
+            <div class="project-img" data-label="APSIS Consulting">
+              <div class="project-img-inner p7"></div>
+              <a href="https://apsis-advisory.netlify.app/" class="project-hover-overlay"><span>View Project
+                  →</span></a>
+            </div>
+            <div class="project-info">
+              <h3>APSIS Business Consulting Ltd</h3>
+              <p>Professional consulting website presenting services, strategy solutions and company profile.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- HemeGo Techprise -->
+          <div class="project-card">
+            <div class="project-img" data-label="HemeGo Techprise">
+              <div class="project-img-inner p-hemego"></div>
+              <a href="https://hemego-techprice.netlify.app" class="project-hover-overlay"><span>View Project
+                  →</span></a>
+              <!-- <div class="project-hover-overlay project-hover-overlay--inprogress">
+                <span class="dl-inprogress-badge">
+                  <span class="dl-inprogress-dot"></span>
+                  In Progress
+                </span>
+              </div> -->
+            </div>
+            <div class="project-info">
+              <div class="dl-title-row">
+                <h3>HemeGo Techprise</h3>
+                <span class="dl-badge-inline">
+                  <span class="dl-badge-dot"></span>In Progress
+                </span>
+              </div>
+              <p>Full-stack e-commerce and repair platform for tech devices, featuring product listings, service
+                booking, and integrated backend systems for inventory, orders, and customer management.</p>
+              <div class="project-tags">
+                <span>Node.js</span><span>MongoDB</span><span>Express</span>
+                <span>JavaScript</span><span>Full Stack</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="projects-group">
+        <h3 class="projects-subtitle">Academic Projects</h3>
+        <div class="projects-grid">
+
+          <!-- Prestige -->
+          <div class="project-card">
+            <div class="project-img" data-label="Prestige Auto">
+              <div class="project-img-inner p8"></div>
+            </div>
+            <div class="project-info">
+              <h3>Prestige Auto</h3>
+              <p>Automotive showroom website displaying vehicles for sale with interactive UI presentation.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ramen -->
+          <div class="project-card">
+            <div class="project-img" data-label="Tonkotsu Ramen">
+              <div class="project-img-inner p9"></div>
+            </div>
+            <div class="project-info">
+              <h3>Tonkotsu Ramen Recipe</h3>
+              <p>Recipe website demonstrating the process of preparing traditional Tonkotsu ramen.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOCKCHAIN ===== -->
+  <section class="section blockchain-section" id="blockchain">
+    <div class="blockchain-bg"></div>
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">06 /</span> Blockchain</div>
+      <div class="blockchain-inner">
+        <div class="blockchain-text">
+          <h2>Smart Contracts &<br /><span class="accent">Web3 Integration</span></h2>
+          <p>Design and deployment of decentralized applications using Solidity, Remix, MetaMask and the Polygon
+            network. Focused on transforming traditional systems into secure, transparent and trustless blockchain
+            solutions.</p>
+          <div class="blockchain-items">
+            <div class="bc-item"><span class="bc-dot"></span> Built escrow smart contracts to enable secure and
+              automated transactions</div>
+            <div class="bc-item"><span class="bc-dot"></span> Developed booking smart contracts to simplify scheduling
+              and reduce manual errors</div>
+            <div class="bc-item"><span class="bc-dot"></span> Integrated MetaMask to allow seamless wallet connection
+              and transaction approvals</div>
+            <div class="bc-item"><span class="bc-dot"></span> Connected frontends to Web3 networks to deliver real-time
+              blockchain interaction and data</div>
+          </div>
+          <a href="blockchain.html" class="btn btn-primary">Explore Blockchain Work →</a>
+        </div>
+        <div class="blockchain-visual">
+          <div class="chain-node node-center">
+            <div class="node-ring"></div>
+            <span class="mono">0x</span>
+          </div>
+          <div class="chain-node node-top"><span class="mono">SC</span></div>
+          <div class="chain-node node-right"><span class="mono">W3</span></div>
+          <div class="chain-node node-bottom"><span class="mono">NFT</span></div>
+          <div class="chain-node node-left"><span class="mono">DAO</span></div>
+          <svg class="chain-lines" viewBox="0 0 300 300">
+            <line x1="150" y1="150" x2="150" y2="40" stroke="rgba(37,99,235,0.25)" stroke-width="1"
+              stroke-dasharray="4 6" />
+            <line x1="150" y1="150" x2="260" y2="150" stroke="rgba(37,99,235,0.25)" stroke-width="1"
+              stroke-dasharray="4 6" />
+            <line x1="150" y1="150" x2="150" y2="260" stroke="rgba(37,99,235,0.25)" stroke-width="1"
+              stroke-dasharray="4 6" />
+            <line x1="150" y1="150" x2="40" y2="150" stroke="rgba(37,99,235,0.25)" stroke-width="1"
+              stroke-dasharray="4 6" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK MARQUEE ===== -->
+  <section class="section techstack-section" id="techstack">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">07 /</span> Tech Stack</div>
+      <h2 class="section-title">Tools &amp; <span class="accent">Technologies</span></h2>
+    </div>
+
+    <!-- Row 1: Full Stack tools -->
+    <div class="logoloop-rows">
+      <div>
+        <p class="logoloop-row-label container">Full Stack · Frontend · Backend · Databases</p>
+        <div class="logoloop logoloop--fade logoloop--scale-hover logoloop-row-1" data-row="1" data-speed="70"
+          data-direction="left" data-hover-speed="0" role="region" aria-label="Full stack technology logos"></div>
+      </div>
+
+      <!-- Row 2: Blockchain + Payments + Deploy (reverse direction) -->
+      <div>
+        <p class="logoloop-row-label container">Blockchain · Payments · Deployment · Tools</p>
+        <div class="logoloop logoloop--fade logoloop--scale-hover logoloop-row-2" data-row="2" data-speed="55"
+          data-direction="right" data-hover-speed="0" role="region"
+          aria-label="Blockchain and deployment technology logos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB ===== -->
+  <section class="section github-section" id="github">
+    <div class="container fade-in">
+      <div class="github-inner">
+        <div class="github-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="github-icon">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </div>
+        <div class="github-text">
+          <h2>Explore the <span class="accent">Source</span></h2>
+          <p>Open source projects, contributions and experiments. See how the sausage is made — all of it is on GitHub.
+          </p>
+          <div class="github-repos">
+            <div class="repo-item"><span class="mono repo-lang" style="color:#f59e0b">●</span> SafeEscrow</div>
+            <div class="repo-item"><span class="mono repo-lang" style="color:#2563eb">●</span> Alina906Vibes</div>
+            <div class="repo-item"><span class="mono repo-lang" style="color:#6366f1">●</span> Meraki Auto</div>
+            <div class="repo-item"><span class="mono repo-lang" style="color:#ef4444">●</span> Noventra Advisory</div>
+          </div>
+          <a href="https://github.com/Kiamapatrick?tab=repositories" class="btn btn-primary">View GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container fade-in">
+      <div class="section-label"><span class="mono">08 /</span> Contact</div>
+      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message →</button>
+          </form>
+        </div>
+        <div class="contact-links">
+          <p class="contact-tagline">Whether it's a project, a question, or just a hello — always open to conversations.
+          </p>
+          <div class="contact-social">
+            <a href="https://github.com/Kiamapatrick?tab=repositories" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="mailto:patokiama2000@gmail.com" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              patokiama2000@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/patrick-kiama-ba91103b9/" target="_blank" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+          <div class="availability-badge">
+            <span class="avail-dot"></span> Available for freelance &amp; full-time roles
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="badge-toast" id="badgeToast" role="status" aria-live="polite" title="View certifications">
+    <div class="bt-icon" id="btIcon"></div>
+    <div class="bt-body">
+      <div class="bt-label">New Badge</div>
+      <div class="bt-name" id="btName"></div>
+      <div class="bt-issuer" id="btIssuer"></div>
+    </div>
+    <button class="bt-close" id="btClose" aria-label="Dismiss">✕</button>
+    <div class="bt-progress" id="btProgress"></div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">PK<span class="dot">.</span></span>
+        <p>© Patrick Kiama — Full Stack Developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/StaggeredMenu.js"></script>
+  <script src="js/LogoLoop.js"></script>
+</body>
+
+</html>
